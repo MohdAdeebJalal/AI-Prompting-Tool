@@ -85,8 +85,8 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 
 import Form from "@components/Form";
 const UpdatePromptPage = () => {
@@ -103,7 +103,7 @@ const UpdatePromptPage = () => {
   );
 };
 
-// export default UpdatePromptPage;
+export default UpdatePromptPage;
 
 const UpdatePrompt = () => {
   const router = useRouter();
@@ -163,4 +163,4 @@ const UpdatePrompt = () => {
   );
 };
 
-export default UpdatePrompt;
+// export default UpdatePrompt;
